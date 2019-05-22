@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            
+            function insertionSort(inputArr) {
+                length = inputArr.length;
+                for (i = 1; i < length; i++) {
+                     key = inputArr[i];
+                     j = i - 1;
+                    while (j >= 0 && inputArr[j] > key) {
+                        inputArr[j + 1] = inputArr[j];
+                        j = j - 1;
+                    }
+                    inputArr[j + 1] = key;
+                }
+                return inputArr;
+            };
+            inputArr=[2,5,7,1,10,4];
+            var p=insertionSort(inputArr);
+            document.write(p);
+
+        </script>
+    </head>
+</html>

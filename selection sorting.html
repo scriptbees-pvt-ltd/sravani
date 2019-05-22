@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            var arr=[5,7,2,14,19];
+            document.write("before sorting values are:", arr);
+            function selectionSort(arr){
+                debugger;
+                for(i=0;i<arr.length-1;i++){
+                    debugger;
+                    for(j=i+1;j<arr.length;j++){
+                        debugger;
+                        if(arr[j]<arr[i]){
+                            debugger;
+                            temp=arr[i];
+                            arr[i]=arr[j];
+                            arr[j]=temp;
+                        }
+                    }
+                }
+                return arr;
+            }
+           
+            var res=selectionSort(arr);
+           
+            document.write("</br>");
+            document.write("after sorting values are:",res);
+        </script>
+    </head>
+</html>

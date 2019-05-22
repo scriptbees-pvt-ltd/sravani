@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function factorial(){
+                debugger;
+                var fact=1,i,no;
+                no=document.getElementById("num").value;
+                for(i=1;i<=no;i++){
+                    fact=fact*i;
+                }
+                document.write(fact);
+            }
+        </script>
+    </head>
+    <body>
+        Enter the number:<input type="text" id="num">
+        <button onclick="factorial()">click</button>
+    </body>
+</html>

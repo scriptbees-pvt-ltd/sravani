@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            var arr1 =prompt("enter the numbers");
+            var arr2 =prompt("enter the numbers"); 
+            var digits1= arr1.split(" ");
+            var digits2= arr2.split(" ");
+            // digits1.forEach(element => {
+            //     document.write(element+ " ");   
+            // });
+
+           // var digits2= arr2.split(" ");
+            // digits2.forEach(element => {
+            //     document.write(element+ " ");   
+            // });
+            var sum=0,sum1=0,sum2=0,sum3=0;
+
+             for(var i=0;i<digits1.length;i++){
+                sum +=digits1[i]*digits2[i];
+                sum1 +=digits1[i]/digits2[i];
+                sum2 +=digits1[i]-digits2[i];
+                sum3 =sum3+ parseInt(digits1[i])+parseInt(digits2[i]);
+             }
+             document.write("sum of the mul:",sum);
+             document.write("</br>");
+             document.write("sum of the div:",sum1);
+             document.write("</br>");
+             document.write("sum of the sub:",sum2);
+             document.write("</br>");
+             document.write("sum of the add:",sum3);
+        </script>
+    </head>
+</html>

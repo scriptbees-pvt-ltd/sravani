@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function palindrome(){
+            var num;
+            num=Number(document.getElementById("number").value);
+            var temp=num,final=0;
+            while(num>0){
+                reminder=num%10;
+                document.write("reminder is:",reminder);
+                num=parseInt(num/10);
+                document.write("</br>");
+                document.write("number is:",num);
+                document.write("</br>");
+                final=final*10+reminder;
+                document.write("final value is:",final);
+            }
+            if(final==temp){
+                window.alert("the input number is palindrome");
+            }
+            else{
+                window.alert("the input number is notpalindrome");
+            }
+        }
+
+        </script>
+    </head>
+    <body>
+        Enter the Number:<input type="text" id="number">
+        <br>
+        <button onclick="palindrome()">Submit</button>
+    </body>
+</html>

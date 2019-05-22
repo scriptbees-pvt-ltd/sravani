@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            var lcm =(n1,n2) =>{
+                var lar=Math.max(n1,n2);
+                var small=Math.min(n1,n2);
+                var i=lar;
+                while(i%small !==0){
+                    i +=lar;
+                }
+                return i;
+            }
+            //window.prompt(lcm(n1,n2));
+            //alert(lcm(5,7));
+            alert(lcm(8,28));
+        </script>
+    </head>
+</html>

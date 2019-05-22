@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+            function multiplymatrix(m1,m2){
+                var result=[];
+               document.write("m1 length:",m1.length);
+               document.write("</br>");
+               document.write("m1",m1[0].length);
+               document.write("</br>");
+                for(var i=0;i<m1.length;i++)
+                {
+                    debugger;
+                    
+                    result[i]=[];
+                    document.write(result[i]);
+                    document.write("m2 length",m2.length);
+                    for(var j=0;j<m2.length;j++)
+                    {
+                        var sum=0,s=0;
+                        
+                        for(var k=0;k<m1[0].length;k++)
+                        {
+                            sum+=m1[i][k]*m2[k][j];
+                            //s+=m1[i][k]*m2[k][j];
+                        }
+                         result[i][j]=sum;
+                        // result[i][j]=s;
+                         
+                    }
+                }
+                return result;
+            }
+             var m1=[[1,2],[3,4]]
+             var m2=[[1,2],[3,4]]
+             var mresult=multiplymatrix(m1,m2)
+             document.write(mresult);
+        </script>
+        
+    </head>
+</html>

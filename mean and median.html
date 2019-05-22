@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            var numbers=[3,5,2,9,10,12];
+            var len=numbers.length;
+            function mean(numbers){
+                debugger;
+                var total=0,i;
+                for(i=0;i<len;i++){
+                    debugger;
+                    total +=numbers[i];
+                }
+                return total/len;
+            }
+            function median(numbers){
+                var median=0,numslen=numbers.length;
+                numbers.sort();
+                if(numslen%2==0){
+                    median=(numbers[numslen/2-1]+numbers[numslen/2])/2;
+                    document.write(numslen);
+                    document.write("</br>");
+                    document.write("values:",numbers[numslen/2-1]);
+                    document.write("</br>");
+                    document.write("value:",numbers[numslen/2]);
+                    document.write("</br>");
+                    document.write("median is:",median);
+                    document.write("</br>");
+                }
+                else{
+                    median=numbers[(numslen-1)/2];
+                    document.write("median value:",median);
+                    document.write("</br>");
+                }
+                return median;
+            }
+            
+            var n=mean(numbers);
+            var n1=median(numbers);
+            document.write(n);
+            document.write("</br>");
+            document.write(n1);
+
+        </script>
+    </head>
+</html>

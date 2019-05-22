@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+           // var a=[5,7,2,14,19];
+           var arr1=parseInt(prompt("enter the numbers"));
+           var digits=(""+arr1).split("");
+            document.write(digits);
+            document.write("</br>");
+            maxvalue=digits[0];
+            minvalue=digits[0];
+            //document.write("</br>");
+            //document.write(a.length);
+            for(i=1;i<digits.length;i++){
+               
+                if(digits[i]>maxvalue){
+                    maxvalue=digits[i];
+                }
+                else if(digits[i]<minvalue){
+                    minvalue=digits[i];
+                }
+                
+            }
+            document.write("maximum value is:",maxvalue);
+            document.write("</br>");
+            document.write("minimum value is:",minvalue);
+            document.write("</br>");
+            dif=maxvalue-minvalue;
+            document.write(dif);
+        </script>
+    </head>
+</html>

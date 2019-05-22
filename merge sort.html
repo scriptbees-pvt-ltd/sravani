@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function mergeSortdArray(a,b){
+	            for(var i=0;i<b.length;i++){
+		            a.push(b[i]);
+	            }
+	//console.log(a);
+                for(i=0;i<a.length;i++)
+                {
+                    for(j=i+1;j<a.length;j++)
+                    {
+                        if(a[i]>a[j])
+                        {
+                            temp=a[i];
+                            a[i]=a[j];
+                            a[j]=temp;
+                        }
+                    }
+                }
+                return a;
+            }
+            a=[1,9,3,2,5];
+            b=[4,6,7,8];
+            var m=mergeSortdArray(a,b);
+            document.write(m);
+        </script>
+    </head>
+</html>

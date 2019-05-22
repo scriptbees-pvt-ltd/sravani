@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            var sum=0,sum1=0;
+           var arr1=prompt("enter the numbers");
+            //var arr1=[-1,9,3,2,-2];
+            var digits=arr1.split(" ");
+            for(i=0;i<digits.length;i++){
+                if(digits[i]>0){
+                    sum +=parseInt(digits[i]);
+
+                }
+                else{
+                    sum1 =sum1+parseInt(digits[i]);
+                }
+            }
+            document.write("sum of:",sum);
+            document.write("</br>");
+            document.write("sum of ne:",sum1);
+        </script>
+    </head>
+</html>
