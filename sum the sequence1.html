@@ -1,0 +1,26 @@
+<!-- sum the sequence 2/9-5/13+8/17-->
+<html>
+    <head>
+        <script type="text/javascript">
+            var sum=0;
+            var a=8;
+            for(var i=1;i<=a;i++)
+            {
+                console.log('i value--',i)
+                for(var j=2,k=9,l=1;l<i;l++,j+=3,k+=4);
+                {
+                    console.log('j value---',j);
+                    if(i%2==0){
+                        console.log('in if---');
+                        sum+=-(j/k);
+                    }
+                    else{
+                        console.log('in else');
+                        sum+=j/k;
+                    }
+                }
+            }
+           alert(sum);
+        </script>
+    </head>
+</html>
