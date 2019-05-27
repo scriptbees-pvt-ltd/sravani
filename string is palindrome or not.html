@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function palindrome(){
+                var revstr="";
+                var str=prompt("enter the string");
+                var s=(""+str).split("");
+                document.write(s);
+                for(var i=s.length;i>=0;i--){
+                    revstr=revstr+str.charAt(i);
+                }
+                if(str == revstr){
+                    alert("palindrome");
+
+                }
+                else{
+                    alert("not palindrome");
+                }
+            }
+            palindrome()
+        </script>
+    </head>
+    <body>
+        <!-- enter a string:<input type="text" id="str" name="string"></br>
+        <button onclick="palindrome()">click</button> -->
+    </body>
+</html>

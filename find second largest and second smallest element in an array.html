@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script type="text/javascript">
+           //var a =[28,10,2,30,50,6,70,8,90,1,110];
+            //var arr=prompt("enter the numbers");
+            var a=[];
+            var n=prompt("enter the size");
+            for(var j=0;j<n;j++){
+                debugger;
+                a[j]=prompt("enter the number" + (j+1));
+                
+            }
+           
+          //  document.write(a);
+            var max=a[0];
+            var secondmax=a[0];
+            var min=a[0];
+            var secondmin=a[0];
+            for(i=0;i<a.length;i++){
+                document.write(a[i]);
+                document.write(" ");
+            }
+            document.write("</br>");
+            for(i=0;i<a.length;i++){
+                debugger;
+                if(a[i]>max){
+                    secondmax=max;
+                    max=a[i];
+                }
+                else if(a[i]>secondmax){
+                    secondmax=a[i];
+                }
+            }
+            for(i=0;i<a.length;i++){
+                debugger;
+                if(a[i]<min){
+                    secondmin=min;
+                    min=a[i];
+                }
+                else if(a[i]<secondmin){
+                    secondmin=a[i];
+                }
+            }
+            document.write("secondmaximum value:",secondmax);
+            document.write("</br>");
+            document.write("secondminimum value:",secondmin);
+        </script>
+    </head>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        //var numbers =[12,10,15,11,14,13,16];
+        //var array=[];
+        //var n=prompt("enter the size");
+        //for(var i=0;i<n;i++){
+          //  array[i]=prompt("enter the number" + (i+1));
+        //}
+        function sorter(array){
+            debugger;
+            var count = array.length - 1,swap;
+            for (var i = 0; i < count; i++){
+                for (var j = 0; j < count; j++){
+                    if (array[j] > array[j + 1]){
+                        swap = array[j + 1];
+                        array[j + 1] = array[j];
+                        array[j] = swap;
+                    }
+                }
+            }
+            return array;
+        }
+        
+        document.write(sorter([12,10,15,11,14,13,16]));
+        </script>
+    </head>
+</html>
