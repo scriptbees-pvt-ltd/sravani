@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script type="text/javascript"> 
+        function linearSearch(){
+            var n=prompt("enter the size of the array");
+            var a=new Array(n);
+            for(var i=0;i<n;i++){
+                a[i]=prompt("enter the array elements");
+            }
+            document.write(a);
+            document.write("</br>");
+            var item=prompt("enter the item");
+            for(var i=0;i<a.length;i++){
+                if(a[i]==item){
+                    document.write("element" + a[i] +"found at position" + i);
+                    document.write("</br>");
+                }
+                else{
+                    document.write(" element not found");
+                    document.write("</br>");
+                }
+            }
+        }
+        linearSearch()
+        </script>
+    </head>
+</html>

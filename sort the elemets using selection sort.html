@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function selectionSort(){
+                var n=prompt("enter the size");
+                var arr=new Array(n);
+                for(var i=0;i<n;i++){
+                    arr[i]=prompt("enter the number");
+                }
+                document.write("before sorting the array:",arr);
+                for(i=0;i<arr.length-1;i++){
+                    debugger;
+                    for(j=i+1;j<arr.length;j++){
+                        debugger;
+                        if(arr[j]<arr[i]){
+                            debugger;
+                            temp=arr[i];
+                            arr[i]=arr[j];
+                            arr[j]=temp;
+                        }
+                    }
+                }
+                document.write("</br>");
+                document.write("after sorting the array:",arr);
+                
+
+            }
+            selectionSort()
+        </script>
+    </head>
+</html>
