@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            //var unsortedArr = [340, 1, 3, 3, 76, 23, 4, 12, 122, 7642, 646];
+            var unsortedArr =new Array();
+            var n=prompt("enter the size");
+            for(var i=0;i<n;i++){
+                unsortedArr[i]=prompt("enter the number");
+            }
+            document.write(unsortedArr);
+            document.write("</br>");
+
+            function merge(leftArr, rightArr) {
+                debugger;
+                var sortedArr = [];
+                while (leftArr.length && rightArr.length) {
+                    if (leftArr[0] <= rightArr[0]) {
+                        sortedArr.push(leftArr[0]);
+                        leftArr = leftArr.slice(1)
+                    } else {
+                        sortedArr.push(rightArr[0]);
+                        rightArr = rightArr.slice(1)
+                    }
+                }
+                while (leftArr.length)
+                    sortedArr.push(leftArr.shift());
+                while (rightArr.length)
+                    sortedArr.push(rightArr.shift());
+                return sortedArr;
+            }
+            function mergesort(arr) {
+                debugger;
+                if (arr.length < 2) {
+                    return arr;
+                }
+                else {
+                    var midpoint = parseInt(arr.length / 2);
+                    var leftArr   = arr.slice(0, midpoint);
+                    var rightArr  = arr.slice(midpoint, arr.length);
+                    return merge(mergesort(leftArr), mergesort(rightArr));
+                }
+            }
+            document.write('This should be the sorted array!')
+            document.write("</br>");
+            document.write(mergesort(unsortedArr));
+
+        </script>
+    </head>
+</html>
